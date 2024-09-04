@@ -4,8 +4,7 @@ namespace NetDesignPatterns.Creational.Builder.HtmlBuilder
     {
         public void RunTest() {
             var builder = new HtmlBuilder("ul");
-            builder.AddChild("li", "Hello");
-            builder.AddChild("li", "world");
+            builder.AddChild("li", "Hello").AddChild("li", "world");
             Console.WriteLine(builder.ToString());
         }
     }
