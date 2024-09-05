@@ -1,6 +1,6 @@
 namespace NetDesignPatterns.Creational.Builder.FluentRecursiveGenerics
 {
-    public class PersonBuilderTest
+    public class PersonBuilderTester
     {
         public  void RunTest(bool canRun = false)
         {
