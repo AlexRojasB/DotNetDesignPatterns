@@ -7,7 +7,7 @@ namespace NetDesignPatterns.Creational.Builder.FunctionalBuilder
             {
                 return;
             }
-            var person = new PersonBuilder()
+            var person = new FunctionalPersonBuilder()
             .Called("Sarah")
             .WorkAsA("Programmer")
             .Build();
