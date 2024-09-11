@@ -3,6 +3,7 @@ using NetDesignPatterns.Creational.Builder.FluentRecursiveGenerics;
 using NetDesignPatterns.Creational.Builder.FunctionalBuilder;
 using NetDesignPatterns.Creational.Builder.HtmlBuilder;
 using NetDesignPatterns.Creational.Factory.FactoryMethod;
+using NetDesignPatterns.Creational.Factory.ObjectTrackingBulkReplacement;
 
 var builderTester = new HtmlBuilderTester();
 builderTester.RunTest();
@@ -14,4 +15,7 @@ var functionalBuilderTester = new FunctionalBuilderTester();
 functionalBuilderTester.RunTest();
 
 var factoryMethodTester = new FactoryMethodTester();
-factoryMethodTester.RunTest(true);
+factoryMethodTester.RunTest();
+
+var trackingFactoryTester = new TrackingFactoryTester();
+trackingFactoryTester.RunTest(true);
