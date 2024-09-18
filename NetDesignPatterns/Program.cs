@@ -5,6 +5,7 @@ using NetDesignPatterns.Creational.Builder.HtmlBuilder;
 using NetDesignPatterns.Creational.Factory.FactoryMethod;
 using NetDesignPatterns.Creational.Factory.ObjectTrackingBulkReplacement;
 using NetDesignPatterns.Creational.Factory.AbstractMethod;
+using NetDesignPatterns.Creational.Factory.AbstractMethodOOP;
 
 var builderTester = new HtmlBuilderTester();
 builderTester.RunTest();
@@ -22,4 +23,7 @@ var trackingFactoryTester = new TrackingFactoryTester();
 trackingFactoryTester.RunTest();
 
 var abstractMethodTester = new AbstractMethodTester();
-abstractMethodTester.RunTest(true);
+abstractMethodTester.RunTest();
+
+var abstractMethodOOPTester = new AbstractMethodTesterOOP();
+abstractMethodOOPTester.RunTest(true);
