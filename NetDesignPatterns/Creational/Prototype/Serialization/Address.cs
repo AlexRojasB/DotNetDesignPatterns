@@ -1,6 +1,6 @@
-namespace NetDesignPatterns.Creational.Prototype.Inheritance
+namespace NetDesignPatterns.Creational.Prototype.Serialzation
 {
-    public class Address : IDeepCopyable<Address>
+    public class Address
     {
         public string StreetName;
         public int HouseNumber;
@@ -16,13 +16,7 @@ namespace NetDesignPatterns.Creational.Prototype.Inheritance
             HouseNumber = houseNumber;
         }
 
-        public void CopyTo(Address target)
-        {
-            target.StreetName = StreetName;
-            target.HouseNumber = HouseNumber;
-        }
-
-        public override string ToString()
+         public override string ToString()
         {
             return $"{nameof(StreetName)}: {StreetName} {nameof(HouseNumber)}: {HouseNumber}";
         }
