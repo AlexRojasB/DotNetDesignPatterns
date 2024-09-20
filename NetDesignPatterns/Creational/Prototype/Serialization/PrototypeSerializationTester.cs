@@ -2,7 +2,7 @@ namespace NetDesignPatterns.Creational.Prototype.Serialzation
 {
     public class PrototypeSerializationTester
     {
-         public void RunTest(bool canRun)
+         public void RunTest(bool canRun = false)
         {
             if(!canRun)return;
 

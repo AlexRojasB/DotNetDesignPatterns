@@ -7,6 +7,7 @@ using NetDesignPatterns.Creational.Factory.ObjectTrackingBulkReplacement;
 using NetDesignPatterns.Creational.Factory.AbstractMethod;
 using NetDesignPatterns.Creational.Factory.AbstractMethodOOP;
 using NetDesignPatterns.Creational.Prototype.Serialzation;
+using NetDesignPatterns.Creational.Singleton.PerThread;
 
 var builderTester = new HtmlBuilderTester();
 builderTester.RunTest();
@@ -30,4 +31,7 @@ var abstractMethodOOPTester = new AbstractMethodTesterOOP();
 abstractMethodOOPTester.RunTest();
 
 var prototypeSerializationTester = new PrototypeSerializationTester();
-prototypeSerializationTester.RunTest(true);
+prototypeSerializationTester.RunTest();
+
+var perThreadTester = new PerThreadTester();
+perThreadTester.RuntTest(true);
